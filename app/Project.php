@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
+    public $timestamps = false;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -17,7 +19,13 @@ class Project extends Model
         'description',
         'budget',
         'is_rush',
-        'status(enum)',
+        'status',
+        'created_date',
+        'deadline',
+        'completion_date',
+        'editor_requirements',
+        'designer_requirements',
+        'templator_requirements'
     ];
 
 
@@ -30,4 +38,16 @@ class Project extends Model
         'created_date' => 'datetime',
         'completion_date' => 'datetime',
     ];
+
+
+
+    public function techCard()
+    {
+        return $this->hasOne('App\TechCard', 'id', 'tech_id');
+    }
+
+    public function executors()
+    {
+        return $this->belongsToMany('App\User', 'project_executors', 'project_id', 'executor_id');
+    }
 }

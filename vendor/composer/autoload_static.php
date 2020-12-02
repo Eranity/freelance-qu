@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
+class ComposerStaticInit78ec08eb801616b60ad1c205e4504881
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -594,9 +594,22 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
     );
 
     public static $classMap = array (
+        'App\\Application' => __DIR__ . '/../..' . '/app/Application.php',
+        'App\\ApplicationRemark' => __DIR__ . '/../..' . '/app/ApplicationRemark.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\EditionType' => __DIR__ . '/../..' . '/app/EditionType.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\ExecutorController' => __DIR__ . '/../..' . '/app/Http/Controllers/ExecutorController.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\ProjectController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProjectController.php',
+        'App\\Http\\Controllers\\TechCardsController' => __DIR__ . '/../..' . '/app/Http/Controllers/TechCardsController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -606,18 +619,24 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Position' => __DIR__ . '/../..' . '/app/Position.php',
+        'App\\Project' => __DIR__ . '/../..' . '/app/Project.php',
+        'App\\ProjectExecutor' => __DIR__ . '/../..' . '/app/ProjectExecutor.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Responce' => __DIR__ . '/../..' . '/app/Responce.php',
         'App\\Role' => __DIR__ . '/../..' . '/app/Role.php',
+        'App\\Stage' => __DIR__ . '/../..' . '/app/Stage.php',
+        'App\\TechCard' => __DIR__ . '/../..' . '/app/TechCard.php',
+        'App\\TechCard_Author' => __DIR__ . '/../..' . '/app/TechCard_Author.php',
+        'App\\TechCard_Language' => __DIR__ . '/../..' . '/app/TechCard_Language.php',
+        'App\\TechCard_WorkType' => __DIR__ . '/../..' . '/app/TechCard_WorkType.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\User_Position' => __DIR__ . '/../..' . '/app/User_Position.php',
-        'App\\Work' => __DIR__ . '/../..' . '/app/Work.php',
         'App\\WorkType' => __DIR__ . '/../..' . '/app/WorkType.php',
         'App\\WorkType_Position' => __DIR__ . '/../..' . '/app/WorkType_Position.php',
-        'App\\project' => __DIR__ . '/../..' . '/app/project.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'Arrilot\\Widgets\\AbstractWidget' => __DIR__ . '/..' . '/arrilot/laravel-widgets/src/AbstractWidget.php',
         'Arrilot\\Widgets\\AsyncFacade' => __DIR__ . '/..' . '/arrilot/laravel-widgets/src/AsyncFacade.php',
@@ -833,6 +852,7 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'Composer\\IO\\ConsoleIO' => __DIR__ . '/..' . '/composer/composer/src/Composer/IO/ConsoleIO.php',
         'Composer\\IO\\IOInterface' => __DIR__ . '/..' . '/composer/composer/src/Composer/IO/IOInterface.php',
         'Composer\\IO\\NullIO' => __DIR__ . '/..' . '/composer/composer/src/Composer/IO/NullIO.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Composer\\Installer' => __DIR__ . '/..' . '/composer/composer/src/Composer/Installer.php',
         'Composer\\Installer\\BinaryInstaller' => __DIR__ . '/..' . '/composer/composer/src/Composer/Installer/BinaryInstaller.php',
         'Composer\\Installer\\BinaryPresenceInterface' => __DIR__ . '/..' . '/composer/composer/src/Composer/Installer/BinaryPresenceInterface.php',
@@ -1443,6 +1463,7 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'Dotenv\\Store\\StoreBuilder' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Store/StoreBuilder.php',
         'Dotenv\\Store\\StoreInterface' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Store/StoreInterface.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
+        'EditionTypesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/EditionTypesTableSeeder.php',
         'Egulias\\EmailValidator\\EmailLexer' => __DIR__ . '/..' . '/egulias/email-validator/src/EmailLexer.php',
         'Egulias\\EmailValidator\\EmailParser' => __DIR__ . '/..' . '/egulias/email-validator/src/EmailParser.php',
         'Egulias\\EmailValidator\\EmailValidator' => __DIR__ . '/..' . '/egulias/email-validator/src/EmailValidator.php',
@@ -3335,7 +3356,6 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'Larapack\\Hooks\\HooksFacade' => __DIR__ . '/..' . '/larapack/hooks/src/HooksFacade.php',
         'Larapack\\Hooks\\HooksServiceProvider' => __DIR__ . '/..' . '/larapack/hooks/src/HooksServiceProvider.php',
         'Larapack\\Hooks\\Migrator' => __DIR__ . '/..' . '/larapack/hooks/src/Migrator.php',
-        'Larapack\\Hooks\\RawOutput' => __DIR__ . '/..' . '/larapack/hooks/src/Hooks.php',
         'Larapack\\VoyagerHooks\\Controllers\\HooksController' => __DIR__ . '/..' . '/larapack/voyager-hooks/src/Controllers/HooksController.php',
         'Larapack\\VoyagerHooks\\VoyagerHooksServiceProvider' => __DIR__ . '/..' . '/larapack/voyager-hooks/src/VoyagerHooksServiceProvider.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
@@ -5075,6 +5095,7 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'Seld\\PharUtils\\Timestamps' => __DIR__ . '/..' . '/seld/phar-utils/src/Timestamps.php',
         'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
         'SettingsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/SettingsTableSeeder.php',
+        'StagesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/StagesTableSeeder.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
@@ -5234,7 +5255,6 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/WrappedListener.php',
         'Symfony\\Component\\EventDispatcher\\DependencyInjection\\AddEventAliasesPass' => __DIR__ . '/..' . '/symfony/event-dispatcher/DependencyInjection/AddEventAliasesPass.php',
-        'Symfony\\Component\\EventDispatcher\\DependencyInjection\\ExtractingEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php',
         'Symfony\\Component\\EventDispatcher\\DependencyInjection\\RegisterListenersPass' => __DIR__ . '/..' . '/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php',
         'Symfony\\Component\\EventDispatcher\\EventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/EventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\EventDispatcherInterface' => __DIR__ . '/..' . '/symfony/event-dispatcher/EventDispatcherInterface.php',
@@ -5602,7 +5622,6 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'Symfony\\Component\\Routing\\Loader\\GlobFileLoader' => __DIR__ . '/..' . '/symfony/routing/Loader/GlobFileLoader.php',
         'Symfony\\Component\\Routing\\Loader\\ObjectLoader' => __DIR__ . '/..' . '/symfony/routing/Loader/ObjectLoader.php',
         'Symfony\\Component\\Routing\\Loader\\PhpFileLoader' => __DIR__ . '/..' . '/symfony/routing/Loader/PhpFileLoader.php',
-        'Symfony\\Component\\Routing\\Loader\\ProtectedPhpFileLoader' => __DIR__ . '/..' . '/symfony/routing/Loader/PhpFileLoader.php',
         'Symfony\\Component\\Routing\\Loader\\XmlFileLoader' => __DIR__ . '/..' . '/symfony/routing/Loader/XmlFileLoader.php',
         'Symfony\\Component\\Routing\\Loader\\YamlFileLoader' => __DIR__ . '/..' . '/symfony/routing/Loader/YamlFileLoader.php',
         'Symfony\\Component\\Routing\\Matcher\\CompiledUrlMatcher' => __DIR__ . '/..' . '/symfony/routing/Matcher/CompiledUrlMatcher.php',
@@ -5956,7 +5975,6 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'TCG\\Voyager\\Http\\Controllers\\ContentTypes\\Text' => __DIR__ . '/..' . '/tcg/voyager/src/Http/Controllers/ContentTypes/Text.php',
         'TCG\\Voyager\\Http\\Controllers\\ContentTypes\\Timestamp' => __DIR__ . '/..' . '/tcg/voyager/src/Http/Controllers/ContentTypes/Timestamp.php',
         'TCG\\Voyager\\Http\\Controllers\\Controller' => __DIR__ . '/..' . '/tcg/voyager/src/Http/Controllers/Controller.php',
-        'TCG\\Voyager\\Http\\Controllers\\LogViewer' => __DIR__ . '/..' . '/tcg/voyager/src/Http/Controllers/VoyagerCompassController.php',
         'TCG\\Voyager\\Http\\Controllers\\Traits\\BreadRelationshipParser' => __DIR__ . '/..' . '/tcg/voyager/src/Http/Controllers/Traits/BreadRelationshipParser.php',
         'TCG\\Voyager\\Http\\Controllers\\VoyagerAuthController' => __DIR__ . '/..' . '/tcg/voyager/src/Http/Controllers/VoyagerAuthController.php',
         'TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController' => __DIR__ . '/..' . '/tcg/voyager/src/Http/Controllers/VoyagerBaseController.php',
@@ -6053,8 +6071,8 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
-        'WorkTypeSeeder' => __DIR__ . '/../..' . '/database/seeds/WorkTypeSeeder.php',
         'WorkType_PositionsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/WorkType_PositionsTableSeeder.php',
+        'WorkTypesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/WorkTypesTableSeeder.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
@@ -6142,10 +6160,10 @@ class ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit47f92dd39ea2433d7439b63e02650b7d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit78ec08eb801616b60ad1c205e4504881::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit78ec08eb801616b60ad1c205e4504881::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit78ec08eb801616b60ad1c205e4504881::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit78ec08eb801616b60ad1c205e4504881::$classMap;
 
         }, null, ClassLoader::class);
     }

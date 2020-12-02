@@ -16,7 +16,7 @@ class User extends \TCG\Voyager\Models\User
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'phone', 'rating'
     ];
 
     /**
@@ -43,5 +43,27 @@ class User extends \TCG\Voyager\Models\User
     public function positions()
     {
         return $this->belongsToMany('App\Position', 'user__positions', 'user_id', 'position_id');
+    }
+
+     /**
+     * Get the positions of user.
+     */
+    public function role()
+    {
+        return $this->belongsTo('App\Role', 'role_id', 'id');
+    }
+
+
+         /**
+     * Get the positions of user.
+     */
+    public function projects()
+    {
+        return $this->belongsToMany('App\Project', 'project_executors', 'executor_id', 'project_id');
+    }
+
+    public function response()
+    {
+        return $this->belongsToMany('App\Responce', 'responces', 'executor_id', 'project_id');
     }
 }

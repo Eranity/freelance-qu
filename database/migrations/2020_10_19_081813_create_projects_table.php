@@ -16,14 +16,17 @@ class CreateProjectsTable extends Migration
         Schema::create('Projects', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->bigInteger('description');
-            $table->longText('tech_id');
+            $table->bigInteger('tech_id');
+            $table->longText('description');
+            $table->longText('editor_requirements');
+            $table->longText('designer_requirements');
+            $table->longText('templator_requirements');
             $table->float('budget');
-            $table->boolean('is_rush');
-            $table->timestamp('created_date',0);
-            $table->timestamp('deadline',0);
-            $table->timestamp('completion_date',0);
-            $table->enum('status', ['new', 'in progres', 'done']);
+            $table->boolean('is_rush')->default(false);
+            $table->timestamp('created_date')->useCurrent();
+            $table->timestamp('deadline')->useCurrent();
+            $table->timestamp('completion_date')->useCurrent();
+            $table->enum('status', ['Новый', 'В работе', 'Завершенный']);
         });
     }
 

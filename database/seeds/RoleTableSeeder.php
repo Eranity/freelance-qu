@@ -47,5 +47,11 @@ class RoleTableSeeder extends Seeder
         ], [
             'display_name' => 'Руководства'
         ]);
+
+        Role::firstOrCreate([
+            'name' => 'author'
+        ], [
+            'display_name' => 'Автор'
+        ]);
     }
 }

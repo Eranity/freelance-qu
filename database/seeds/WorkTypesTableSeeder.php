@@ -5,7 +5,7 @@ use TCG\Voyager\Models\Role;
 use App\WorkType;
 
 
-class WorkTypeSeeder extends Seeder
+class WorkTypesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -55,7 +55,7 @@ class WorkTypeSeeder extends Seeder
         ]);
 
         WorkType::firstOrCreate([
-            'name' => 'Cредняя верстка(текст + таблица+рисунок)'
+            'name' => 'Cредняя верстка(текст + таблица + рисунок)'
         ], [
             'unit_type' => 'Количество страниц А4',
             'unit_price' => '125',
@@ -135,7 +135,7 @@ class WorkTypeSeeder extends Seeder
         ]);
 
         WorkType::firstOrCreate([
-            'name' => 'Автосканирование '
+            'name' => 'Автосканирование'
         ], [
             'unit_type' => 'Количество страниц',
             'unit_price' => '25',
